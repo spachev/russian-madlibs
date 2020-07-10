@@ -4,9 +4,17 @@ import requests
 import sys
 import argparse
 import lxml.html
+import re
+
+PAREN_RE = re.compile(r".*\((.*)\).*")
 
 def get_url_for_word(word):
 	return f"https://en.wiktionary.org/wiki/{word}"
+
+def extract_gr_changes(root):
+	cols = [el.text_content().strip() for el in root.xpath("//div[@class='NavContent']//tr[3]//th")
+						if el.text_content().strip() ]
+	print(cols)
 
 def get_grammar(word):
 	url = get_url_for_word(word)
@@ -18,12 +26,14 @@ def get_grammar(word):
 	try:
 		gr_els = root.xpath('//h2[span[@id="Russian"]]/following-sibling::div//div[@class="NavHead"]')
 		gr_txt = gr_els[0].text_content().strip()
-		gr_txt = gr_txt.replace('(','')
-		gr_txt = gr_txt.replace(')','')
-		print(gr_txt)
+		m = PAREN_RE.match(gr_txt)
+		if not m:
+			return None
+		gr_txt = m.group(1)
+		extract_gr_changes(root)
 	except:
 		return None
-	return ""
+	return {"word": word, "gr": gr_txt}
 
 parser = argparse.ArgumentParser(description='Build a Russian grammar dictionary')
 parser.add_argument('--input-file', help='Dictionary source file', required=True)
@@ -38,5 +48,3 @@ with open(args.input_file, 'r') as fh:
 		if words_with_gr is None:
 			continue
 		print(words_with_gr)
-		break
-
