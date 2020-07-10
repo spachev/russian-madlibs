@@ -18,6 +18,8 @@ def get_grammar(word):
 	try:
 		gr_els = root.xpath('//h2[span[@id="Russian"]]/following-sibling::div//div[@class="NavHead"]')
 		gr_txt = gr_els[0].text_content().strip()
+		gr_txt = gr_txt.replace('(','')
+		gr_txt = gr_txt.replace(')','')
 		print(gr_txt)
 	except:
 		return None
