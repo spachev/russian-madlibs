@@ -36,6 +36,7 @@ def extract_gr_changes(root):
 			c_ind_offset += colspan - 1
 			debug(f"{gr_ident} : {word}")
 			gr_lookup[gr_ident] = word
+			print(f"Grammar: {gr_ident}, Word: {word}")
 	return gr_lookup
 
 def get_grammar(word):
