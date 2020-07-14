@@ -71,4 +71,3 @@ with open(args.input_file, 'r') as fh:
 		if words_with_gr is None:
 			continue
 		debug(words_with_gr)
-
