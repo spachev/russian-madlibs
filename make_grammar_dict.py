@@ -76,8 +76,8 @@ logging.basicConfig(level=logging.DEBUG,  format='%(asctime)s %(levelname)-8s %(
 logger = logging.getLogger(__name__)
 with open(args.input_file, 'r') as fh:
 	for l in fh:
-		num_requests = 0
 		parts = l.split("/")
+		num_requests = 0
 		if len(parts) != 2:
 			continue
 		words_with_gr = get_grammar(parts[0])
