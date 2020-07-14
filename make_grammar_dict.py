@@ -6,11 +6,9 @@ import argparse
 import lxml.html
 import re
 import logging
+import json
 
 PAREN_RE = re.compile(r".*\((.*)\).*")
-logging.basicConfig(level=logging.DEBUG,  format='%(asctime)s %(levelname)-8s %(message)s')
-logger = logging.getLogger(__name__)
-
 def get_url_for_word(word):
 	return f"https://en.wiktionary.org/wiki/{word}"
 
@@ -38,13 +36,15 @@ def extract_gr_changes(root):
 			gr_lookup[gr_ident] = word
 	return gr_lookup
 
-def get_grammar(word):
+def get_grammar(word): 
+	num_requests = 0
 	url = get_url_for_word(word)
 	debug(url)
 	rsp = requests.get(url)
 	if not rsp.ok:
 		return None
 	root = lxml.html.fromstring(rsp.content)
+	gr_changes = None
 	try:
 		gr_els = root.xpath('//h2[span[@id="Russian"]]/following-sibling::div//div[@class="NavHead"]')
 		gr_txt = gr_els[0].text_content().strip()
@@ -52,18 +52,31 @@ def get_grammar(word):
 		if not m:
 			return None
 		gr_txt = m.group(1)
-		extract_gr_changes(root)
+		gr_changes = extract_gr_changes(root)
 	except Exception as e:
 		debug(e)
 		return None
-	return {"word": word, "gr": gr_txt}
+	return {"word": word, "gr": gr_txt, "gr_changes" : gr_changes}
 
 parser = argparse.ArgumentParser(description='Build a Russian grammar dictionary')
 parser.add_argument('--input-file', help='Dictionary source file', required=True)
+parser.add_argument('--max-words', help='Maximum words to scrape', default=None)
+parser.add_argument('--lookup-out-file', help='Output file for loookup', required=True)
+parser.add_argument('--debug-level', help='Which level to log', required=True)
 args = parser.parse_args()
+gr_dict = {}
+n_words = 0
+max_words = None
+if args.max_words:
+	max_words = int(args.max_words)
+if args.debug_level:
+    debug_level = args.debug_level
 
+logging.basicConfig(level=logging.DEBUG,  format='%(asctime)s %(levelname)-8s %(message)s')
+logger = logging.getLogger(__name__)
 with open(args.input_file, 'r') as fh:
 	for l in fh:
+		num_requests = 0
 		parts = l.split("/")
 		if len(parts) != 2:
 			continue
@@ -71,3 +84,15 @@ with open(args.input_file, 'r') as fh:
 		if words_with_gr is None:
 			continue
 		debug(words_with_gr)
+		for k,v in words_with_gr['gr_changes'].items():
+			gr_k = words_with_gr['gr'] + "|" + k
+			if gr_k not in gr_dict:
+				gr_dict[gr_k] = []
+				num_requests += 1
+			gr_dict[gr_k].append(v)
+		n_words += 1
+		if max_words and n_words == max_words:
+			break
+	print(num_requests)
+with open(args.lookup_out_file, "w") as fh:
+	json.dump(gr_dict, fh)
