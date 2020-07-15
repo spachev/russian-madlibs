@@ -66,15 +66,21 @@ parser.add_argument('--input-file', help='Dictionary source file', required=True
 parser.add_argument('--max-words', help='Maximum words to scrape', default=None)
 parser.add_argument('--lookup-out-file', help='Output file for loookup', required=True)
 parser.add_argument('--debug', help='Which level to log', default=False)
+
 args = parser.parse_args()
 gr_dict = {}
 n_words = 0
 max_words = None
+
 debug_level = logging.INFO
 if args.max_words:
 	max_words = int(args.max_words)
 if args.debug:
     debug_level = logging.DEBUG
+
+if args.max_words:
+	max_words = int(args.max_words)
+
 
 logging.basicConfig(level=debug_level,  format='%(asctime)s %(levelname)-8s %(message)s')
 logger = logging.getLogger(__name__)
@@ -98,5 +104,10 @@ with open(args.input_file, 'r') as fh:
 		info(f"Number of requests : {num_requests}, Number of words {n_words}")
 		if max_words and n_words == max_words:
 			break
+with open(args.lookup_out_file, "w") as fh:
+	json.dump(gr_dict, fh)
+		if max_words and n_words == max_words:
+			break
+
 with open(args.lookup_out_file, "w") as fh:
 	json.dump(gr_dict, fh)
