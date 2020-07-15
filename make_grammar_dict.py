@@ -9,15 +9,15 @@ import logging
 import json
 
 PAREN_RE = re.compile(r".*\((.*)\).*")
-logging.basicConfig(level=logging.DEBUG,  format='%(asctime)s %(levelname)-8s %(message)s')
-logger = logging.getLogger(__name__)
-
 def get_url_for_word(word):
 	return f"https://en.wiktionary.org/wiki/{word}"
 
 def debug(msg):
+	logger.debug(msg)
+	
+def info(msg):
 	logger.info(msg)
-
+	
 def extract_gr_changes(root):
 	cols = [el.text_content().strip() for el in root.xpath("//div[@class='NavContent']//tr[1]//th")
 						if el.text_content().strip() ]
@@ -39,7 +39,8 @@ def extract_gr_changes(root):
 			gr_lookup[gr_ident] = word
 	return gr_lookup
 
-def get_grammar(word):
+def get_grammar(word): 
+	num_requests = 0
 	url = get_url_for_word(word)
 	debug(url)
 	rsp = requests.get(url)
@@ -63,19 +64,33 @@ def get_grammar(word):
 parser = argparse.ArgumentParser(description='Build a Russian grammar dictionary')
 parser.add_argument('--input-file', help='Dictionary source file', required=True)
 parser.add_argument('--max-words', help='Maximum words to scrape', default=None)
-parser.add_argument('--lookup-out-file', help='Outpuf file for loookup', required=True)
+parser.add_argument('--lookup-out-file', help='Output file for loookup', required=True)
+parser.add_argument('--debug', help='Which level to log', default=False)
+
 args = parser.parse_args()
 gr_dict = {}
 n_words = 0
 max_words = None
+
+debug_level = logging.INFO
+if args.max_words:
+	max_words = int(args.max_words)
+if args.debug:
+    debug_level = logging.DEBUG
+
 if args.max_words:
 	max_words = int(args.max_words)
 
+
+logging.basicConfig(level=debug_level,  format='%(asctime)s %(levelname)-8s %(message)s')
+logger = logging.getLogger(__name__)
 with open(args.input_file, 'r') as fh:
+	num_requests = 0
 	for l in fh:
 		parts = l.split("/")
 		if len(parts) != 2:
 			continue
+		num_requests += 1
 		words_with_gr = get_grammar(parts[0])
 		if words_with_gr is None:
 			continue
@@ -86,9 +101,13 @@ with open(args.input_file, 'r') as fh:
 				gr_dict[gr_k] = []
 			gr_dict[gr_k].append(v)
 		n_words += 1
+		info(f"Number of requests : {num_requests}, Number of words {n_words}")
+		if max_words and n_words == max_words:
+			break
+with open(args.lookup_out_file, "w") as fh:
+	json.dump(gr_dict, fh)
 		if max_words and n_words == max_words:
 			break
 
 with open(args.lookup_out_file, "w") as fh:
 	json.dump(gr_dict, fh)
-
