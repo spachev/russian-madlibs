@@ -18,6 +18,13 @@ def debug(msg):
 def info(msg):
 	logger.info(msg)
 
+def save_out_file(out_file,out_dict):
+    with open(out_file, "w") as fh:
+        json.dump(out_dict, fh, indent=2)
+
+def load_out_file(out_file):
+    with open(args.lookup_out_file, "r") as fh:
+        json.dump(fh)
 def extract_gr_changes(root):
 	cols = [el.text_content().strip() for el in root.xpath("//div[@class='NavContent']//tr[1]//th")
 						if el.text_content().strip() ]
@@ -65,21 +72,23 @@ parser.add_argument('--input-file', help='Dictionary source file', required=True
 parser.add_argument('--max-words', help='Maximum words to scrape', default=None)
 parser.add_argument('--lookup-out-file', help='Output file for loookup', required=True)
 parser.add_argument('--debug', action='store_true', help='Which level to log')
+parser.add_argument('--save-file-frequency', help='How often to save to out file', default=None)
 
 args = parser.parse_args()
 gr_dict = {}
 n_words = 0
 max_words = None
-
 debug_level = logging.INFO
+save_frequency = None
+
 if args.max_words:
 	max_words = int(args.max_words)
+
 if args.debug:
 	debug_level = logging.DEBUG
 
-if args.max_words:
-	max_words = int(args.max_words)
-
+if args.save_file_frequency:
+	save_frequency = int(args.save_file_frequency)
 
 logging.basicConfig(level=debug_level,  format='%(asctime)s %(levelname)-8s %(message)s')
 logger = logging.getLogger(__name__)
@@ -104,11 +113,9 @@ with open(args.input_file, 'r') as fh:
 			gr_dict[gr_k].append(v)
 		n_words += 1
 		info(f"Number of requests : {n_requests}, Number of words {n_words}")
+		out_dict = {'cur_line' : n_lines, 'n_requests' : n_requests,'n_words' : n_words, 'gr_dict' : gr_dict}		
+		if n_words % save_frequency == 0:
+			save_out_file(args.lookup_out_file,out_dict)
 		if max_words and n_words == max_words:
 			break
-
-out_dict = {'cur_line' : n_lines, 'n_requests' : n_requests,
-						'n_words' : n_words, 'gr_dict' : gr_dict}
-
-with open(args.lookup_out_file, "w") as fh:
-	json.dump(out_dict, fh, indent=2)
+save_out_file(args.lookup_out_file,out_dict)
