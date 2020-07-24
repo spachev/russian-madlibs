@@ -51,12 +51,12 @@ def extract_gr_changes(root):
 def get_grammar(word):
 	url = get_url_for_word(word)
 	debug(url)
-	rsp = requests.get(url,timeout=2)
-	if not rsp.ok:
-		return None
-	root = lxml.html.fromstring(rsp.content)
-	gr_changes = None
 	try:
+		rsp = requests.get(url,timeout=2)
+		if not rsp.ok:
+			return None
+		root = lxml.html.fromstring(rsp.content)
+		gr_changes = None
 		gr_els = root.xpath('//h2[span[@id="Russian"]]/following-sibling::div//div[@class="NavHead"]')
 		gr_txt = gr_els[0].text_content().strip()
 		m = PAREN_RE.match(gr_txt)
