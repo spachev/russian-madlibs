@@ -1,0 +1,397 @@
+{
+  "cur_line": 4149,
+  "n_requests": 234,
+  "n_words": 230,
+  "gr_dict": {
+    "inan neut-form i-stem accent-a|nominative|singular": [
+      "\u043e\u0431\u044a\u0435\u0434\u0438\u043d\u0435\u0301\u043d\u0438\u0435",
+      "\u043e\u0431\u044a\u044f\u0441\u043d\u0435\u0301\u043d\u0438\u0435",
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u0438\u0435",
+      "\u043e\u0431\u044a\u044f\u0432\u043b\u0435\u0301\u043d\u0438\u0435",
+      "\u043e\u0446\u0435\u043f\u043b\u0435\u0301\u043d\u0438\u0435",
+      "\u043e\u0446\u0435\u043f\u0435\u043d\u0435\u0301\u043d\u0438\u0435",
+      "\u043e\u0434\u0451\u0440\u0433\u0438\u0432\u0430\u043d\u0438\u0435"
+    ],
+    "inan neut-form i-stem accent-a|nominative|plural": [
+      "\u043e\u0431\u044a\u0435\u0434\u0438\u043d\u0435\u0301\u043d\u0438\u044f",
+      "\u043e\u0431\u044a\u044f\u0441\u043d\u0435\u0301\u043d\u0438\u044f",
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u0438\u044f",
+      "\u043e\u0431\u044a\u044f\u0432\u043b\u0435\u0301\u043d\u0438\u044f",
+      "\u043e\u0446\u0435\u043f\u043b\u0435\u0301\u043d\u0438\u044f",
+      "\u043e\u0446\u0435\u043f\u0435\u043d\u0435\u0301\u043d\u0438\u044f",
+      "\u043e\u0434\u0451\u0440\u0433\u0438\u0432\u0430\u043d\u0438\u044f"
+    ],
+    "inan neut-form i-stem accent-a|genitive|singular": [
+      "\u043e\u0431\u044a\u0435\u0434\u0438\u043d\u0435\u0301\u043d\u0438\u044f",
+      "\u043e\u0431\u044a\u044f\u0441\u043d\u0435\u0301\u043d\u0438\u044f",
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u0438\u044f",
+      "\u043e\u0431\u044a\u044f\u0432\u043b\u0435\u0301\u043d\u0438\u044f",
+      "\u043e\u0446\u0435\u043f\u043b\u0435\u0301\u043d\u0438\u044f",
+      "\u043e\u0446\u0435\u043f\u0435\u043d\u0435\u0301\u043d\u0438\u044f",
+      "\u043e\u0434\u0451\u0440\u0433\u0438\u0432\u0430\u043d\u0438\u044f"
+    ],
+    "inan neut-form i-stem accent-a|genitive|plural": [
+      "\u043e\u0431\u044a\u0435\u0434\u0438\u043d\u0435\u0301\u043d\u0438\u0439",
+      "\u043e\u0431\u044a\u044f\u0441\u043d\u0435\u0301\u043d\u0438\u0439",
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u0438\u0439",
+      "\u043e\u0431\u044a\u044f\u0432\u043b\u0435\u0301\u043d\u0438\u0439",
+      "\u043e\u0446\u0435\u043f\u043b\u0435\u0301\u043d\u0438\u0439",
+      "\u043e\u0446\u0435\u043f\u0435\u043d\u0435\u0301\u043d\u0438\u0439",
+      "\u043e\u0434\u0451\u0440\u0433\u0438\u0432\u0430\u043d\u0438\u0439"
+    ],
+    "inan neut-form i-stem accent-a|dative|singular": [
+      "\u043e\u0431\u044a\u0435\u0434\u0438\u043d\u0435\u0301\u043d\u0438\u044e",
+      "\u043e\u0431\u044a\u044f\u0441\u043d\u0435\u0301\u043d\u0438\u044e",
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u0438\u044e",
+      "\u043e\u0431\u044a\u044f\u0432\u043b\u0435\u0301\u043d\u0438\u044e",
+      "\u043e\u0446\u0435\u043f\u043b\u0435\u0301\u043d\u0438\u044e",
+      "\u043e\u0446\u0435\u043f\u0435\u043d\u0435\u0301\u043d\u0438\u044e",
+      "\u043e\u0434\u0451\u0440\u0433\u0438\u0432\u0430\u043d\u0438\u044e"
+    ],
+    "inan neut-form i-stem accent-a|dative|plural": [
+      "\u043e\u0431\u044a\u0435\u0434\u0438\u043d\u0435\u0301\u043d\u0438\u044f\u043c",
+      "\u043e\u0431\u044a\u044f\u0441\u043d\u0435\u0301\u043d\u0438\u044f\u043c",
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u0438\u044f\u043c",
+      "\u043e\u0431\u044a\u044f\u0432\u043b\u0435\u0301\u043d\u0438\u044f\u043c",
+      "\u043e\u0446\u0435\u043f\u043b\u0435\u0301\u043d\u0438\u044f\u043c",
+      "\u043e\u0446\u0435\u043f\u0435\u043d\u0435\u0301\u043d\u0438\u044f\u043c",
+      "\u043e\u0434\u0451\u0440\u0433\u0438\u0432\u0430\u043d\u0438\u044f\u043c"
+    ],
+    "inan neut-form i-stem accent-a|accusative|singular": [
+      "\u043e\u0431\u044a\u0435\u0434\u0438\u043d\u0435\u0301\u043d\u0438\u0435",
+      "\u043e\u0431\u044a\u044f\u0441\u043d\u0435\u0301\u043d\u0438\u0435",
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u0438\u0435",
+      "\u043e\u0431\u044a\u044f\u0432\u043b\u0435\u0301\u043d\u0438\u0435",
+      "\u043e\u0446\u0435\u043f\u043b\u0435\u0301\u043d\u0438\u0435",
+      "\u043e\u0446\u0435\u043f\u0435\u043d\u0435\u0301\u043d\u0438\u0435",
+      "\u043e\u0434\u0451\u0440\u0433\u0438\u0432\u0430\u043d\u0438\u0435"
+    ],
+    "inan neut-form i-stem accent-a|accusative|plural": [
+      "\u043e\u0431\u044a\u0435\u0434\u0438\u043d\u0435\u0301\u043d\u0438\u044f",
+      "\u043e\u0431\u044a\u044f\u0441\u043d\u0435\u0301\u043d\u0438\u044f",
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u0438\u044f",
+      "\u043e\u0431\u044a\u044f\u0432\u043b\u0435\u0301\u043d\u0438\u044f",
+      "\u043e\u0446\u0435\u043f\u043b\u0435\u0301\u043d\u0438\u044f",
+      "\u043e\u0446\u0435\u043f\u0435\u043d\u0435\u0301\u043d\u0438\u044f",
+      "\u043e\u0434\u0451\u0440\u0433\u0438\u0432\u0430\u043d\u0438\u044f"
+    ],
+    "inan neut-form i-stem accent-a|instrumental|singular": [
+      "\u043e\u0431\u044a\u0435\u0434\u0438\u043d\u0435\u0301\u043d\u0438\u0435\u043c",
+      "\u043e\u0431\u044a\u044f\u0441\u043d\u0435\u0301\u043d\u0438\u0435\u043c",
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u0438\u0435\u043c",
+      "\u043e\u0431\u044a\u044f\u0432\u043b\u0435\u0301\u043d\u0438\u0435\u043c",
+      "\u043e\u0446\u0435\u043f\u043b\u0435\u0301\u043d\u0438\u0435\u043c",
+      "\u043e\u0446\u0435\u043f\u0435\u043d\u0435\u0301\u043d\u0438\u0435\u043c",
+      "\u043e\u0434\u0451\u0440\u0433\u0438\u0432\u0430\u043d\u0438\u0435\u043c"
+    ],
+    "inan neut-form i-stem accent-a|instrumental|plural": [
+      "\u043e\u0431\u044a\u0435\u0434\u0438\u043d\u0435\u0301\u043d\u0438\u044f\u043c\u0438",
+      "\u043e\u0431\u044a\u044f\u0441\u043d\u0435\u0301\u043d\u0438\u044f\u043c\u0438",
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u0438\u044f\u043c\u0438",
+      "\u043e\u0431\u044a\u044f\u0432\u043b\u0435\u0301\u043d\u0438\u044f\u043c\u0438",
+      "\u043e\u0446\u0435\u043f\u043b\u0435\u0301\u043d\u0438\u044f\u043c\u0438",
+      "\u043e\u0446\u0435\u043f\u0435\u043d\u0435\u0301\u043d\u0438\u044f\u043c\u0438",
+      "\u043e\u0434\u0451\u0440\u0433\u0438\u0432\u0430\u043d\u0438\u044f\u043c\u0438"
+    ],
+    "inan neut-form i-stem accent-a|prepositional|singular": [
+      "\u043e\u0431\u044a\u0435\u0434\u0438\u043d\u0435\u0301\u043d\u0438\u0438",
+      "\u043e\u0431\u044a\u044f\u0441\u043d\u0435\u0301\u043d\u0438\u0438",
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u0438\u0438",
+      "\u043e\u0431\u044a\u044f\u0432\u043b\u0435\u0301\u043d\u0438\u0438",
+      "\u043e\u0446\u0435\u043f\u043b\u0435\u0301\u043d\u0438\u0438",
+      "\u043e\u0446\u0435\u043f\u0435\u043d\u0435\u0301\u043d\u0438\u0438",
+      "\u043e\u0434\u0451\u0440\u0433\u0438\u0432\u0430\u043d\u0438\u0438"
+    ],
+    "inan neut-form i-stem accent-a|prepositional|plural": [
+      "\u043e\u0431\u044a\u0435\u0434\u0438\u043d\u0435\u0301\u043d\u0438\u044f\u0445",
+      "\u043e\u0431\u044a\u044f\u0441\u043d\u0435\u0301\u043d\u0438\u044f\u0445",
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u0438\u044f\u0445",
+      "\u043e\u0431\u044a\u044f\u0432\u043b\u0435\u0301\u043d\u0438\u044f\u0445",
+      "\u043e\u0446\u0435\u043f\u043b\u0435\u0301\u043d\u0438\u044f\u0445",
+      "\u043e\u0446\u0435\u043f\u0435\u043d\u0435\u0301\u043d\u0438\u044f\u0445",
+      "\u043e\u0434\u0451\u0440\u0433\u0438\u0432\u0430\u043d\u0438\u044f\u0445"
+    ],
+    "inan masc-form hard-stem accent-a|nominative|singular": [
+      "\u043e\u0431\u044a\u0435\u0301\u043a\u0442",
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432",
+      "\u043e\u0431\u044a\u0435\u0301\u0437\u0434",
+      "\u044f\u0301\u0434"
+    ],
+    "inan masc-form hard-stem accent-a|nominative|plural": [
+      "\u043e\u0431\u044a\u0435\u0301\u043a\u0442\u044b",
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u044b",
+      "\u043e\u0431\u044a\u0435\u0301\u0437\u0434\u044b",
+      "\u044f\u0301\u0434\u044b"
+    ],
+    "inan masc-form hard-stem accent-a|genitive|singular": [
+      "\u043e\u0431\u044a\u0435\u0301\u043a\u0442\u0430",
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u0430",
+      "\u043e\u0431\u044a\u0435\u0301\u0437\u0434\u0430",
+      "\u044f\u0301\u0434\u0430"
+    ],
+    "inan masc-form hard-stem accent-a|genitive|plural": [
+      "\u043e\u0431\u044a\u0435\u0301\u043a\u0442\u043e\u0432",
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u043e\u0432",
+      "\u043e\u0431\u044a\u0435\u0301\u0437\u0434\u043e\u0432",
+      "\u044f\u0301\u0434\u043e\u0432"
+    ],
+    "inan masc-form hard-stem accent-a|dative|singular": [
+      "\u043e\u0431\u044a\u0435\u0301\u043a\u0442\u0443",
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u0443",
+      "\u043e\u0431\u044a\u0435\u0301\u0437\u0434\u0443",
+      "\u044f\u0301\u0434\u0443"
+    ],
+    "inan masc-form hard-stem accent-a|dative|plural": [
+      "\u043e\u0431\u044a\u0435\u0301\u043a\u0442\u0430\u043c",
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u0430\u043c",
+      "\u043e\u0431\u044a\u0435\u0301\u0437\u0434\u0430\u043c",
+      "\u044f\u0301\u0434\u0430\u043c"
+    ],
+    "inan masc-form hard-stem accent-a|accusative|singular": [
+      "\u043e\u0431\u044a\u0435\u0301\u043a\u0442",
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432",
+      "\u043e\u0431\u044a\u0435\u0301\u0437\u0434",
+      "\u044f\u0301\u0434"
+    ],
+    "inan masc-form hard-stem accent-a|accusative|plural": [
+      "\u043e\u0431\u044a\u0435\u0301\u043a\u0442\u044b",
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u044b",
+      "\u043e\u0431\u044a\u0435\u0301\u0437\u0434\u044b",
+      "\u044f\u0301\u0434\u044b"
+    ],
+    "inan masc-form hard-stem accent-a|instrumental|singular": [
+      "\u043e\u0431\u044a\u0435\u0301\u043a\u0442\u043e\u043c",
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u043e\u043c",
+      "\u043e\u0431\u044a\u0435\u0301\u0437\u0434\u043e\u043c",
+      "\u044f\u0301\u0434\u043e\u043c"
+    ],
+    "inan masc-form hard-stem accent-a|instrumental|plural": [
+      "\u043e\u0431\u044a\u0435\u0301\u043a\u0442\u0430\u043c\u0438",
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u0430\u043c\u0438",
+      "\u043e\u0431\u044a\u0435\u0301\u0437\u0434\u0430\u043c\u0438",
+      "\u044f\u0301\u0434\u0430\u043c\u0438"
+    ],
+    "inan masc-form hard-stem accent-a|prepositional|singular": [
+      "\u043e\u0431\u044a\u0435\u0301\u043a\u0442\u0435",
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u0435",
+      "\u043e\u0431\u044a\u0435\u0301\u0437\u0434\u0435",
+      "\u044f\u0301\u0434\u0435"
+    ],
+    "inan masc-form hard-stem accent-a|prepositional|plural": [
+      "\u043e\u0431\u044a\u0435\u0301\u043a\u0442\u0430\u0445",
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u0430\u0445",
+      "\u043e\u0431\u044a\u0435\u0301\u0437\u0434\u0430\u0445",
+      "\u044f\u0301\u0434\u0430\u0445"
+    ],
+    "inan sg-only fem-form 3rd-decl accent-a|nominative|singular": [
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u043d\u043e\u0441\u0442\u044c"
+    ],
+    "inan sg-only fem-form 3rd-decl accent-a|genitive|singular": [
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u043d\u043e\u0441\u0442\u0438"
+    ],
+    "inan sg-only fem-form 3rd-decl accent-a|dative|singular": [
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u043d\u043e\u0441\u0442\u0438"
+    ],
+    "inan sg-only fem-form 3rd-decl accent-a|accusative|singular": [
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u043d\u043e\u0441\u0442\u044c"
+    ],
+    "inan sg-only fem-form 3rd-decl accent-a|instrumental|singular": [
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u043d\u043e\u0441\u0442\u044c\u044e"
+    ],
+    "inan sg-only fem-form 3rd-decl accent-a|prepositional|singular": [
+      "\u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0301\u0432\u043d\u043e\u0441\u0442\u0438"
+    ],
+    "inan neut-form vowel-stem accent-a|nominative|singular": [
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u044c\u0435"
+    ],
+    "inan neut-form vowel-stem accent-a|nominative|plural": [
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u044c\u044f"
+    ],
+    "inan neut-form vowel-stem accent-a|genitive|singular": [
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u044c\u044f"
+    ],
+    "inan neut-form vowel-stem accent-a|genitive|plural": [
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u0438\u0439"
+    ],
+    "inan neut-form vowel-stem accent-a|dative|singular": [
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u044c\u044e"
+    ],
+    "inan neut-form vowel-stem accent-a|dative|plural": [
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u044c\u044f\u043c"
+    ],
+    "inan neut-form vowel-stem accent-a|accusative|singular": [
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u044c\u0435"
+    ],
+    "inan neut-form vowel-stem accent-a|accusative|plural": [
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u044c\u044f"
+    ],
+    "inan neut-form vowel-stem accent-a|instrumental|singular": [
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u044c\u0435\u043c"
+    ],
+    "inan neut-form vowel-stem accent-a|instrumental|plural": [
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u044c\u044f\u043c\u0438"
+    ],
+    "inan neut-form vowel-stem accent-a|prepositional|singular": [
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u044c\u0435"
+    ],
+    "inan neut-form vowel-stem accent-a|prepositional|plural": [
+      "\u043e\u0431\u044a\u044f\u0301\u0442\u044c\u044f\u0445"
+    ],
+    "anim masc-form velar-stem accent-a|nominative|singular": [
+      "\u043e\u0446\u0435\u0301\u043d\u0449\u0438\u043a",
+      "\u0430\u0446\u0442\u0435\u0301\u043a"
+    ],
+    "anim masc-form velar-stem accent-a|nominative|plural": [
+      "\u043e\u0446\u0435\u0301\u043d\u0449\u0438\u043a\u0438",
+      "\u0430\u0446\u0442\u0435\u0301\u043a\u0438"
+    ],
+    "anim masc-form velar-stem accent-a|genitive|singular": [
+      "\u043e\u0446\u0435\u0301\u043d\u0449\u0438\u043a\u0430",
+      "\u0430\u0446\u0442\u0435\u0301\u043a\u0430"
+    ],
+    "anim masc-form velar-stem accent-a|genitive|plural": [
+      "\u043e\u0446\u0435\u0301\u043d\u0449\u0438\u043a\u043e\u0432",
+      "\u0430\u0446\u0442\u0435\u0301\u043a\u043e\u0432"
+    ],
+    "anim masc-form velar-stem accent-a|dative|singular": [
+      "\u043e\u0446\u0435\u0301\u043d\u0449\u0438\u043a\u0443",
+      "\u0430\u0446\u0442\u0435\u0301\u043a\u0443"
+    ],
+    "anim masc-form velar-stem accent-a|dative|plural": [
+      "\u043e\u0446\u0435\u0301\u043d\u0449\u0438\u043a\u0430\u043c",
+      "\u0430\u0446\u0442\u0435\u0301\u043a\u0430\u043c"
+    ],
+    "anim masc-form velar-stem accent-a|accusative|singular": [
+      "\u043e\u0446\u0435\u0301\u043d\u0449\u0438\u043a\u0430",
+      "\u0430\u0446\u0442\u0435\u0301\u043a\u0430"
+    ],
+    "anim masc-form velar-stem accent-a|accusative|plural": [
+      "\u043e\u0446\u0435\u0301\u043d\u0449\u0438\u043a\u043e\u0432",
+      "\u0430\u0446\u0442\u0435\u0301\u043a\u043e\u0432"
+    ],
+    "anim masc-form velar-stem accent-a|instrumental|singular": [
+      "\u043e\u0446\u0435\u0301\u043d\u0449\u0438\u043a\u043e\u043c",
+      "\u0430\u0446\u0442\u0435\u0301\u043a\u043e\u043c"
+    ],
+    "anim masc-form velar-stem accent-a|instrumental|plural": [
+      "\u043e\u0446\u0435\u0301\u043d\u0449\u0438\u043a\u0430\u043c\u0438",
+      "\u0430\u0446\u0442\u0435\u0301\u043a\u0430\u043c\u0438"
+    ],
+    "anim masc-form velar-stem accent-a|prepositional|singular": [
+      "\u043e\u0446\u0435\u0301\u043d\u0449\u0438\u043a\u0435",
+      "\u0430\u0446\u0442\u0435\u0301\u043a\u0435"
+    ],
+    "anim masc-form velar-stem accent-a|prepositional|plural": [
+      "\u043e\u0446\u0435\u0301\u043d\u0449\u0438\u043a\u0430\u0445",
+      "\u0430\u0446\u0442\u0435\u0301\u043a\u0430\u0445"
+    ],
+    "inan sg-only masc-form hard-stem accent-a|nominative|singular": [
+      "\u0430\u0446\u0435\u0442\u045d\u043b\u0435\u0304\u043d"
+    ],
+    "inan sg-only masc-form hard-stem accent-a|genitive|singular": [
+      "\u0430\u0446\u0435\u0442\u0438\u043b\u0435\u0301\u043d\u0430"
+    ],
+    "inan sg-only masc-form hard-stem accent-a|dative|singular": [
+      "\u0430\u0446\u0435\u0442\u0438\u043b\u0435\u043d\u0443"
+    ],
+    "inan sg-only masc-form hard-stem accent-a|accusative|singular": [
+      "\u0430\u0446\u0435\u0442\u0438\u043b\u0435\u043d"
+    ],
+    "inan sg-only masc-form hard-stem accent-a|instrumental|singular": [
+      "\u0430\u0446\u0435\u0442\u0438\u043b\u0435\u043d\u0435"
+    ],
+    "inan sg-only masc-form hard-stem accent-a|prepositional|singular": [
+      "\u0430\u0446\u0435\u0442\u0438\u043b\u0435\u043d\u0443"
+    ],
+    "anim sg-only masc-form hard-stem accent-a|nominative|singular": [
+      "\u0410\u0438\u0301\u0434"
+    ],
+    "anim sg-only masc-form hard-stem accent-a|genitive|singular": [
+      "\u0410\u0438\u0301\u0434\u0430"
+    ],
+    "anim sg-only masc-form hard-stem accent-a|dative|singular": [
+      "\u0410\u0438\u0301\u0434\u0443"
+    ],
+    "anim sg-only masc-form hard-stem accent-a|accusative|singular": [
+      "\u0410\u0438\u0301\u0434\u0430"
+    ],
+    "anim sg-only masc-form hard-stem accent-a|instrumental|singular": [
+      "\u0410\u0438\u0301\u0434\u043e\u043c"
+    ],
+    "anim sg-only masc-form hard-stem accent-a|prepositional|singular": [
+      "\u0410\u0438\u0301\u0434\u0435"
+    ],
+    "inan sg-only fem-form hard-stem accent-d|nominative|singular": [
+      "\u0435\u0434\u0430\u0301"
+    ],
+    "inan sg-only fem-form hard-stem accent-d|genitive|singular": [
+      "\u0435\u0434\u044b\u0301"
+    ],
+    "inan sg-only fem-form hard-stem accent-d|dative|singular": [
+      "\u0435\u0434\u0435\u0301"
+    ],
+    "inan sg-only fem-form hard-stem accent-d|accusative|singular": [
+      "\u0435\u0434\u0443\u0301"
+    ],
+    "inan sg-only fem-form hard-stem accent-d|instrumental|singular": [
+      "\u0435\u0434\u043e\u0301\u0439"
+    ],
+    "inan sg-only fem-form hard-stem accent-d|prepositional|singular": [
+      "\u0435\u0434\u0435\u0301"
+    ],
+    "anim sg-only fem-form hard-stem accent-a|nominative|singular": [
+      "\u0418\u0443\u0301\u0434\u0430"
+    ],
+    "anim sg-only fem-form hard-stem accent-a|genitive|singular": [
+      "\u0418\u0443\u0301\u0434\u044b"
+    ],
+    "anim sg-only fem-form hard-stem accent-a|dative|singular": [
+      "\u0418\u0443\u0301\u0434\u0435"
+    ],
+    "anim sg-only fem-form hard-stem accent-a|accusative|singular": [
+      "\u0418\u0443\u0301\u0434\u0443"
+    ],
+    "anim sg-only fem-form hard-stem accent-a|instrumental|singular": [
+      "\u0418\u0443\u0301\u0434\u043e\u0439"
+    ],
+    "anim sg-only fem-form hard-stem accent-a|prepositional|singular": [
+      "\u0418\u0443\u0301\u0434\u0435"
+    ],
+    "inan fem-form sibilant-stem accent-a|nominative|singular": [
+      "\u043e\u0434\u0451\u0436\u0430"
+    ],
+    "inan fem-form sibilant-stem accent-a|nominative|plural": [
+      "\u043e\u0434\u0451\u0436\u0438"
+    ],
+    "inan fem-form sibilant-stem accent-a|genitive|singular": [
+      "\u043e\u0434\u0451\u0436\u0438"
+    ],
+    "inan fem-form sibilant-stem accent-a|genitive|plural": [
+      "\u043e\u0434\u0451\u0436"
+    ],
+    "inan fem-form sibilant-stem accent-a|dative|singular": [
+      "\u043e\u0434\u0451\u0436\u0435"
+    ],
+    "inan fem-form sibilant-stem accent-a|dative|plural": [
+      "\u043e\u0434\u0451\u0436\u0430\u043c"
+    ],
+    "inan fem-form sibilant-stem accent-a|accusative|singular": [
+      "\u043e\u0434\u0451\u0436\u0443"
+    ],
+    "inan fem-form sibilant-stem accent-a|accusative|plural": [
+      "\u043e\u0434\u0451\u0436\u0438"
+    ],
+    "inan fem-form sibilant-stem accent-a|instrumental|singular": [
+      "\u043e\u0434\u0451\u0436\u0435\u0439"
+    ],
+    "inan fem-form sibilant-stem accent-a|instrumental|plural": [
+      "\u043e\u0434\u0451\u0436\u0430\u043c\u0438"
+    ],
+    "inan fem-form sibilant-stem accent-a|prepositional|singular": [
+      "\u043e\u0434\u0451\u0436\u0435"
+    ],
+    "inan fem-form sibilant-stem accent-a|prepositional|plural": [
+      "\u043e\u0434\u0451\u0436\u0430\u0445"
+    ]
+  }
+}
