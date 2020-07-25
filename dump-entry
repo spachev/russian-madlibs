@@ -1,0 +1,3 @@
+#!/bin/bash
+
+jq '.gr_dict."'"$1"'"' result.json 
